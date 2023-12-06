@@ -1,6 +1,138 @@
-nav
+nav {
+    padding: 10px 20px 10px 20px;
+    position: sticky;
+    top: 0;
+    height: 3.5rem;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.nav-dark {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 10px 10px 10px rgb(19, 18, 18);
+}
+
+.nav-light {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    box-shadow: 10px 10px 10px rgb(233, 231, 231);
+}
+
+nav>.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo1 {
+    width: 10rem;
+}
+
+.logo2 {
+    display: none;
+}
+
+.sidebarBtns {
+    display: none;
+}
+
+nav>.logo>img {}
+
+.dark-btn {
+    padding: 5px;
+}
+
+.nav-dark .dark-btn:hover {
+    background: #d6d3d3;
+    border-radius: 100px;
+    color: #000;
+
+
+}
+
+.nav-light .dark-btn:hover {
+    background: #6e6d6d;
+    border-radius: 100px;
+    color: #fff;
+
+
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+
+}
+
+.searchBar input {
+    padding: 0px 10px 0px 10px;
+    background-color: transparent;
+    width: 500px;
+    height: 30px;
+    color:#fff;
+    border: 2px solid #404040;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.searchBar input:focus {
+    border: 2px solid rgb(119, 119, 241);
+}
+
+.searchBar button {
+    padding: 0px 10px 0px 10px;
+    background-color: #404040;
+    color: #fff;
+    height: 35px;
+    width: 50px;
+}
+.nav-dark >input
 {
-    width: 100%;
-    background-color: rgb(199, 240, 213);
-    height: 40px;
+    color: #fff;
+}
+.nav-light>input
+{
+    color: #000;
+}
+.btns
+{
+    display: flex;
+    align-items:center ;
+    gap:10px;
+}
+
+@media screen and (max-width:720px) {
+
+    .logo1 {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+        width: 2rem;
+        border-radius: 100%;
+
+    }
+
+    .sidebarBtns {
+        display: inline-block;
+    }
+    .searchBar>input{
+        width: auto;
+    }
+    .dark-btn
+    {
+        display: none;
+    }
+    .searchBar
+    {
+        display: none;
+    }
 }

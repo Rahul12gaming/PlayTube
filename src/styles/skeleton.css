@@ -1,0 +1,92 @@
+.skeleton
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    position: relative;
+    margin-bottom: 10px;
+   
+}
+.skeleton>.thumbnail
+{
+    border-radius: 10px;
+   width: 100%;
+    height: 12rem;
+    background-color: rgba(100,116,139,.4);
+    animation: skeletonHover infinite 2s;
+}
+.skeletonDetails
+{
+    padding: 0px 5px 0px 5px;
+width: 100%;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skeletonDetails>.avatar
+{
+    
+    height: 2rem;
+    width: 2rem;
+    background-color: rgba(100,116,139,.4);
+    border-radius: 100%;
+    animation: skeletonHover infinite 2s;
+}
+.skeletonText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.skeletonText>span
+{
+    background-color: rgba(148,163,184,.4);
+    height: 1rem;
+    width: 250px;
+    border-radius: 10px;
+    animation: skeletonHover infinite 2s;
+}
+.skeletonText>span:nth-child(2)
+{
+    background-color: rgba(100,116,139,.4);
+}   
+
+@media screen and (max-width:720px) {
+    .skeleton
+
+    {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .skeletonDetails
+    {
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .skeleton>.thumbnail
+{
+    
+    height: 15rem;
+   
+}
+    
+}
+@keyframes skeletonHover {
+    0%
+    {
+        background-color: rgba(148,163,184,.4);
+    }   
+    50%
+    {
+        background-color: rgba(100,116,139,.4);
+    }
+    100%
+    {
+        background-color: rgba(148,163,184,.4);
+    }
+}

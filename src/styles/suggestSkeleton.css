@@ -1,0 +1,40 @@
+.suggestSkeleton
+{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+   
+}
+.suggestSkeleton>.thumbnail
+{
+    border-radius: 10px;
+   width: 80%;
+    height: 15rem;
+    background-color: rgba(100,116,139,.4);
+    animation: skeletonHover infinite 2s;
+}
+  
+
+@media screen and (max-width:720px) {
+    
+    
+}
+@keyframes skeletonHover {
+    0%
+    {
+        background-color: rgba(148,163,184,.4);
+    }   
+    50%
+    {
+        background-color: rgba(100,116,139,.4);
+    }
+    100%
+    {
+        background-color: rgba(148,163,184,.4);
+    }
+}

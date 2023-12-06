@@ -1,0 +1,85 @@
+.videoCard
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin: auto; */
+    
+    width: 350px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration:none;
+    color: #000;
+    
+}
+#dark
+{
+    color: #fff;
+}
+#light
+{
+    color: #000;
+}
+.videoDetails
+{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.videoText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.videoThumnail
+{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.videoLength
+{
+    position: relative;
+    top: -40px;
+    left: 260px;
+    color: #fff;
+    background-color: rgb(31, 30, 30);
+    padding: 8px;
+    border-radius: 5px;
+}
+.videoThumnail>img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.videoDetails>.videoAvatar>img
+{
+    border-radius: 100%;
+    width: 2.5rem;
+}
+.details
+{
+    display: flex;
+
+}
+@media screen and (max-width:720px) {
+    .videoCard
+    {
+        width: 100%;
+    }
+    .videoThumnail
+{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+.videoLength
+{
+    
+    left: 290px;
+    
+}
+}
